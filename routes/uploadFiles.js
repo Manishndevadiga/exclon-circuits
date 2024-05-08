@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const upload = require("../controllers/uploadFiles");
-// const check = require("../middlewares/apiMiddleware");
+
 
 router.get("/upload", upload.uploadFile);
 router.post("/uploadFile", upload.post_uploadFile);
